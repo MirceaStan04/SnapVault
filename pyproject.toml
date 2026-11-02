@@ -1,0 +1,17 @@
+[project]
+name = "snapvault"
+version = "0.1.0"
+description = "Incremental backup tool with block-level deduplication"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+[project.scripts]
+snapvault = "snapvault.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
